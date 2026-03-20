@@ -23,27 +23,32 @@
 
     <div class="border-t border-white/10 my-5"></div>
 
-    <!-- Menú -->
+    <!-- Menu -->
     <nav class="flex-1">
       <ul class="space-y-2">
         <li>
-          <a
-            href="#"
+          <router-link
+            to="/"
             class="flex items-center gap-3 rounded-xl px-4 py-3 bg-(--color-secondary) text-white font-medium shadow-sm"
           >
             <span><i class="fa-solid fa-chart-pie"></i></span>
             <span>Dashboard</span>
-          </a>
+          </router-link>
         </li>
 
         <li>
-          <a
-            href="#"
-            class="flex items-center gap-3 rounded-xl px-4 py-3 text-white/85 hover:bg-white/10 hover:text-white transition"
+          <router-link
+            to="/pedidos"
+            @click="active = 'pedidos'"
+            :class="
+              active === 'pedidos'
+                ? 'bg-[--color-secondary] text-white font-medium shadow-sm flex items-center gap-3 rounded-xl px-4 py-3'
+                : 'text-white/85 hover:bg-white/10 hover:text-white transition flex items-center gap-3 rounded-xl px-4 py-3'
+            "
           >
             <span><i class="fa-solid fa-box"></i></span>
             <span>Pedidos</span>
-          </a>
+          </router-link>
         </li>
 
         <li>
@@ -94,4 +99,7 @@
   </aside>
 </template>
 
-<script setup></script>
+<script setup>
+let active = false
+let i = true
+</script>
