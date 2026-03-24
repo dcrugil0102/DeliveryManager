@@ -29,7 +29,12 @@
         <li>
           <router-link
             to="/"
-            class="flex items-center gap-3 rounded-xl px-4 py-3 bg-(--color-secondary) text-white font-medium shadow-sm"
+            :class="[
+              'flex items-center gap-3 rounded-xl px-4 py-3 transition',
+              route.path === '/'
+                ? 'bg-(--color-secondary) text-white font-medium shadow-sm'
+                : 'text-white/85 hover:bg-white/10 hover:text-white',
+            ]"
           >
             <span><i class="fa-solid fa-chart-pie"></i></span>
             <span>Dashboard</span>
@@ -39,12 +44,12 @@
         <li>
           <router-link
             to="/pedidos"
-            @click="active = 'pedidos'"
-            :class="
-              active === 'pedidos'
-                ? 'bg-[--color-secondary] text-white font-medium shadow-sm flex items-center gap-3 rounded-xl px-4 py-3'
-                : 'text-white/85 hover:bg-white/10 hover:text-white transition flex items-center gap-3 rounded-xl px-4 py-3'
-            "
+            :class="[
+              'flex items-center gap-3 rounded-xl px-4 py-3 transition',
+              route.path === '/pedidos'
+                ? 'bg-(--color-secondary) text-white font-medium shadow-sm'
+                : 'text-white/85 hover:bg-white/10 hover:text-white',
+            ]"
           >
             <span><i class="fa-solid fa-box"></i></span>
             <span>Pedidos</span>
@@ -52,43 +57,63 @@
         </li>
 
         <li>
-          <a
-            href="#"
-            class="flex items-center gap-3 rounded-xl px-4 py-3 text-white/85 hover:bg-white/10 hover:text-white transition"
+          <router-link
+            to="/repartidores"
+            :class="[
+              'flex items-center gap-3 rounded-xl px-4 py-3 transition',
+              route.path === '/repartidores'
+                ? 'bg-(--color-secondary) text-white font-medium shadow-sm'
+                : 'text-white/85 hover:bg-white/10 hover:text-white',
+            ]"
           >
             <span><i class="fa-solid fa-motorcycle"></i></span>
             <span>Repartidores</span>
-          </a>
+          </router-link>
         </li>
 
         <li>
-          <a
-            href="#"
-            class="flex items-center gap-3 rounded-xl px-4 py-3 text-white/85 hover:bg-white/10 hover:text-white transition"
+          <router-link
+            to="/turnos"
+            :class="[
+              'flex items-center gap-3 rounded-xl px-4 py-3 transition',
+              route.path === '/turnos'
+                ? 'bg-(--color-secondary) text-white font-medium shadow-sm'
+                : 'text-white/85 hover:bg-white/10 hover:text-white',
+            ]"
           >
             <span><i class="fa-solid fa-clock"></i></span>
             <span>Turnos</span>
-          </a>
+          </router-link>
         </li>
 
         <li>
-          <a
-            href="#"
-            class="flex items-center gap-3 rounded-xl px-4 py-3 text-white/85 hover:bg-white/10 hover:text-white transition"
+          <router-link
+            to="/estadisticas"
+            :class="[
+              'flex items-center gap-3 rounded-xl px-4 py-3 transition',
+              route.path === '/estadisticas'
+                ? 'bg-(--color-secondary) text-white font-medium shadow-sm'
+                : 'text-white/85 hover:bg-white/10 hover:text-white',
+            ]"
           >
             <span><i class="fa-solid fa-chart-line"></i></span>
             <span>Estadísticas</span>
-          </a>
+          </router-link>
         </li>
 
         <li>
-          <a
-            href="#"
-            class="flex items-center gap-3 rounded-xl px-4 py-3 text-white/85 hover:bg-white/10 hover:text-white transition"
+          <router-link
+            to="/config"
+            :class="[
+              'flex items-center gap-3 rounded-xl px-4 py-3 transition',
+              route.path === '/config'
+                ? 'bg-(--color-secondary) text-white font-medium shadow-sm'
+                : 'text-white/85 hover:bg-white/10 hover:text-white',
+            ]"
           >
             <span><i class="fa-solid fa-gear"></i> </span>
             <span>Configuración</span>
-          </a>
+          </router-link>
         </li>
       </ul>
     </nav>
@@ -100,6 +125,7 @@
 </template>
 
 <script setup>
-let active = false
-let i = true
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
 </script>

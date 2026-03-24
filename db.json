@@ -1,0 +1,286 @@
+{
+  "pedidos": [
+    {
+      "id": 3,
+      "cliente": "Carlos Ruiz",
+      "direccion": "Calle Granada 8",
+      "telefono": "622333111",
+      "estado": "entregado",
+      "repartidorId": 2,
+      "precio": 22.3,
+      "hora": "12:50"
+    },
+    {
+      "id": 8,
+      "cliente": "Elena Ruiz",
+      "direccion": "Calle Jaén 18",
+      "telefono": "677111222",
+      "estado": "entregado",
+      "repartidorId": 2,
+      "precio": 19.9,
+      "hora": "13:00"
+    },
+    {
+      "id": 2,
+      "cliente": "María López",
+      "direccion": "Avenida Andalucía 45",
+      "telefono": "611987654",
+      "estado": "en reparto",
+      "repartidorId": 1,
+      "precio": 12.0,
+      "hora": "13:10"
+    },
+    {
+      "id": 9,
+      "cliente": "Sergio Díaz",
+      "direccion": "Calle Ronda 2",
+      "telefono": "600111222",
+      "estado": "pendiente",
+      "repartidorId": null,
+      "precio": 14.5,
+      "hora": "13:15"
+    },
+    {
+      "id": 10,
+      "cliente": "Laura Martín",
+      "direccion": "Calle Sol 9",
+      "telefono": "611222333",
+      "estado": "en reparto",
+      "repartidorId": 1,
+      "precio": 21.0,
+      "hora": "13:20"
+    },
+    {
+      "id": 11,
+      "cliente": "Miguel Ángel",
+      "direccion": "Calle Luna 4",
+      "telefono": "622444555",
+      "estado": "pendiente",
+      "repartidorId": null,
+      "precio": 10.0,
+      "hora": "13:25"
+    },
+    {
+      "id": 1,
+      "cliente": "Juan Pérez",
+      "direccion": "Calle Real 12",
+      "telefono": "600123456",
+      "estado": "pendiente",
+      "repartidorId": null,
+      "precio": 18.5,
+      "hora": "13:30"
+    },
+    {
+      "id": 12,
+      "cliente": "Raúl Gómez",
+      "direccion": "Calle Norte 7",
+      "telefono": "633555777",
+      "estado": "en reparto",
+      "repartidorId": 2,
+      "precio": 16.2,
+      "hora": "13:35"
+    },
+    {
+      "id": 6,
+      "cliente": "Ana Torres",
+      "direccion": "Avenida Madrid 10",
+      "telefono": "655777888",
+      "estado": "en reparto",
+      "repartidorId": 1,
+      "precio": 27.0,
+      "hora": "13:40"
+    },
+    {
+      "id": 13,
+      "cliente": "Pablo Ruiz",
+      "direccion": "Calle Sur 11",
+      "telefono": "644888999",
+      "estado": "pendiente",
+      "repartidorId": null,
+      "precio": 13.3,
+      "hora": "13:45"
+    },
+    {
+      "id": 14,
+      "cliente": "Lucía Pérez",
+      "direccion": "Calle Este 5",
+      "telefono": "655999000",
+      "estado": "pendiente",
+      "repartidorId": null,
+      "precio": 8.9,
+      "hora": "13:50"
+    },
+    {
+      "id": 15,
+      "cliente": "David Sánchez",
+      "direccion": "Calle Oeste 3",
+      "telefono": "666111333",
+      "estado": "en reparto",
+      "repartidorId": 1,
+      "precio": 17.8,
+      "hora": "13:55"
+    },
+    {
+      "id": 4,
+      "cliente": "Lucía Fernández",
+      "direccion": "Calle Málaga 21",
+      "telefono": "633222444",
+      "estado": "pendiente",
+      "repartidorId": null,
+      "precio": 15.0,
+      "hora": "14:00"
+    },
+    {
+      "id": 16,
+      "cliente": "Alberto Castro",
+      "direccion": "Calle Nueva 14",
+      "telefono": "677222444",
+      "estado": "pendiente",
+      "repartidorId": null,
+      "precio": 20.1,
+      "hora": "14:02"
+    },
+    {
+      "id": 5,
+      "cliente": "Pedro Sánchez",
+      "direccion": "Calle Sevilla 5",
+      "telefono": "644555666",
+      "estado": "pendiente",
+      "repartidorId": null,
+      "precio": 9.5,
+      "hora": "14:05"
+    },
+    {
+      "id": 17,
+      "cliente": "Cristina López",
+      "direccion": "Calle Alta 6",
+      "telefono": "688333555",
+      "estado": "en reparto",
+      "repartidorId": 2,
+      "precio": 23.4,
+      "hora": "14:06"
+    },
+    {
+      "id": 18,
+      "cliente": "Fernando Ruiz",
+      "direccion": "Calle Baja 2",
+      "telefono": "699444666",
+      "estado": "pendiente",
+      "repartidorId": null,
+      "precio": 11.7,
+      "hora": "14:07"
+    },
+    {
+      "id": 19,
+      "cliente": "Beatriz Mora",
+      "direccion": "Calle Central 8",
+      "telefono": "600555777",
+      "estado": "entregado",
+      "repartidorId": 2,
+      "precio": 18.9,
+      "hora": "14:08"
+    },
+    {
+      "id": 7,
+      "cliente": "Javier Moreno",
+      "direccion": "Calle Córdoba 3",
+      "telefono": "666999000",
+      "estado": "pendiente",
+      "repartidorId": null,
+      "precio": 11.2,
+      "hora": "14:10"
+    },
+    {
+      "id": 20,
+      "cliente": "Irene Gil",
+      "direccion": "Calle Verde 1",
+      "telefono": "611666888",
+      "estado": "pendiente",
+      "repartidorId": null,
+      "precio": 14.0,
+      "hora": "14:12"
+    },
+    {
+      "id": 21,
+      "cliente": "Oscar Vega",
+      "direccion": "Calle Azul 4",
+      "telefono": "622777999",
+      "estado": "en reparto",
+      "repartidorId": 1,
+      "precio": 25.0,
+      "hora": "14:15"
+    },
+    {
+      "id": 22,
+      "cliente": "Noelia Ramos",
+      "direccion": "Calle Blanca 7",
+      "telefono": "633888000",
+      "estado": "pendiente",
+      "repartidorId": null,
+      "precio": 16.5,
+      "hora": "14:18"
+    },
+    {
+      "id": 23,
+      "cliente": "Rubén Ortiz",
+      "direccion": "Calle Negra 9",
+      "telefono": "644999111",
+      "estado": "entregado",
+      "repartidorId": 2,
+      "precio": 19.0,
+      "hora": "14:20"
+    },
+    {
+      "id": 24,
+      "cliente": "Marta León",
+      "direccion": "Calle Rosa 12",
+      "telefono": "655000222",
+      "estado": "pendiente",
+      "repartidorId": null,
+      "precio": 12.6,
+      "hora": "14:22"
+    },
+    {
+      "id": 25,
+      "cliente": "Diego Herrera",
+      "direccion": "Calle Oro 15",
+      "telefono": "666111444",
+      "estado": "en reparto",
+      "repartidorId": 1,
+      "precio": 28.3,
+      "hora": "14:25"
+    }
+  ],
+
+  "repartidores": [
+    {
+      "id": 1,
+      "nombre": "Alfonso",
+      "estado": "ocupado",
+      "telefono": "600000001"
+    },
+    {
+      "id": 2,
+      "nombre": "David",
+      "estado": "disponible",
+      "telefono": "600000002"
+    }
+  ],
+
+  "turnos": [
+    {
+      "id": 1,
+      "repartidorId": 1,
+      "dia": "lunes",
+      "horaInicio": "19:00",
+      "horaFin": "23:00"
+    },
+    {
+      "id": 2,
+      "repartidorId": 2,
+      "dia": "lunes",
+      "horaInicio": "20:00",
+      "horaFin": "00:00"
+    }
+  ]
+}

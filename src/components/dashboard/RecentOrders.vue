@@ -8,11 +8,20 @@
         </p>
       </div>
 
-      <button
-        class="bg-(--color-secondary) hover:bg-(--color-secondary-dark) text-white px-4 py-2 rounded-xl text-sm font-medium transition"
-      >
-        Ver todos
-      </button>
+      <div class="flex gap-5">
+        <select v-model="limit">
+          <option :value="5">5</option>
+          <option :value="10">10</option>
+          <option :value="15">15</option>
+          <option :value="20">20</option>
+        </select>
+
+        <button
+          class="bg-(--color-secondary) hover:bg-(--color-secondary-dark) text-white px-4 py-2 rounded-xl text-sm font-medium transition"
+        >
+          <router-link to="/pedidos">Ver todos</router-link>
+        </button>
+      </div>
     </div>
 
     <div class="overflow-x-auto">
@@ -31,7 +40,7 @@
 
         <tbody>
           <tr
-            v-for="pedido in pedidos"
+            v-for="pedido in pedidosFiltrados"
             :key="pedido.id"
             class="border-b border-(--color-border) last:border-b-0 hover:bg-(--color-primary-soft) transition"
           >
@@ -80,59 +89,33 @@
 </template>
 
 <script setup>
-const pedidos = [
-  {
-    id: 1043,
-    cliente: 'Juan López',
-    direccion: 'Calle Lucena 14',
-    repartidor: 'Carlos',
-    estado: 'Pendiente',
-    hora: '21:05',
-  },
-  {
-    id: 1044,
-    cliente: 'María Ruiz',
-    direccion: 'Av. Andalucía 22',
-    repartidor: 'Marta',
-    estado: 'En reparto',
-    hora: '21:12',
-  },
-  {
-    id: 1045,
-    cliente: 'Pedro García',
-    direccion: 'Calle Granada 8',
-    repartidor: 'David',
-    estado: 'Entregado',
-    hora: '20:48',
-  },
-  {
-    id: 1046,
-    cliente: 'Laura Sánchez',
-    direccion: 'Calle Comedias 3',
-    repartidor: 'Sin asignar',
-    estado: 'Pendiente',
-    hora: '21:18',
-  },
-  {
-    id: 1047,
-    cliente: 'Damián Cruz',
-    direccion: 'Calle Alhambra de Granada 121',
-    repartidor: 'Sin asignar',
-    estado: 'Pendiente',
-    hora: '21:30',
-  },
-]
+import { computed, onMounted, ref } from 'vue'
+
+const pedidos = ref([])
+
+onMounted(() => {
+  fetch('http://localhost:3000/pedidos')
+    .then((res) => res.json())
+    .then((data) => {
+      pedidos.value = data
+    })
+})
+const limit = ref(5)
+
+const pedidosFiltrados = computed(() => {
+  return pedidos.value.slice(-limit.value)
+})
 
 const getStatusClass = (estado) => {
-  if (estado === 'Pendiente') {
+  if (estado === 'pendiente') {
     return 'bg-yellow-100 text-yellow-700'
   }
 
-  if (estado === 'En reparto') {
+  if (estado === 'en reparto') {
     return 'bg-blue-100 text-blue-700'
   }
 
-  if (estado === 'Entregado') {
+  if (estado === 'entregado') {
     return 'bg-green-100 text-green-700'
   }
 
