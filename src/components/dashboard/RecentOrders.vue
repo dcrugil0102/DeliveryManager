@@ -55,7 +55,7 @@
             </td>
 
             <td class="py-4 text-(--color-text-primary)">
-              {{ pedido.repartidor }}
+              {{ getRepartidor(pedido.repartidorId) }}
             </td>
 
             <td class="py-4">
@@ -92,6 +92,7 @@
 import { computed, onMounted, ref } from 'vue'
 
 const pedidos = ref([])
+const repartidores = ref([])
 
 onMounted(() => {
   fetch('http://localhost:3000/pedidos')
@@ -99,12 +100,22 @@ onMounted(() => {
     .then((data) => {
       pedidos.value = data
     })
+
+  fetch('http://localhost:3000/repartidores')
+    .then((res) => res.json())
+    .then((data) => {
+      repartidores.value = data
+    })
 })
 const limit = ref(5)
 
 const pedidosFiltrados = computed(() => {
   return pedidos.value.slice(-limit.value)
 })
+
+function getRepartidor(id) {
+  return repartidores.value.find((r) => Number(r.id) === Number(id))?.nombre || 'Sin asignar'
+}
 
 const getStatusClass = (estado) => {
   if (estado === 'pendiente') {
