@@ -1,6 +1,6 @@
 <template>
   <div class="space-y-6">
-    <h1 class="font-bold text-3xl">Panel de control</h1>
+    <h1 class="font-bold text-3xl text-slate-900">Panel de control</h1>
 
     <!-- KPIs -->
     <section class="grid grid-cols-4 gap-6">

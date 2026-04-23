@@ -1,30 +1,30 @@
 <template>
   <section class="space-y-6">
     <div class="flex items-center justify-between">
-      <h1 class="text-3xl font-bold text-slate-900">Pedidos</h1>
+      <h1 class="text-3xl font-bold text-slate-900">Turnos</h1>
 
       <button
         class="rounded-xl bg-(--color-secondary) px-5 py-3 font-medium text-white shadow-sm transition hover:opacity-90"
       >
-        Nuevo pedido
+        Nuevo turno
       </button>
     </div>
 
-    <OrdersTable :orders="orders" :delivery-drivers="deliveryDrivers" />
+    <TurnsCalendar :turns="turns" :drivers="drivers" />
   </section>
 </template>
 
 <script setup>
 import { onMounted, ref } from 'vue'
-import OrdersTable from '@/components/orders/OrdersTable.vue'
-import { getOrders } from '@/services/ordersService'
+import TurnsCalendar from '@/components/turns/TurnsCalendar.vue'
+import { getTurns } from '@/services/turnsService'
 import { getDrivers } from '@/services/driversService'
 
-const orders = ref([])
-const deliveryDrivers = ref([])
+const turns = ref([])
+const drivers = ref([])
 
 onMounted(async () => {
-  orders.value = await getOrders()
-  deliveryDrivers.value = await getDrivers()
+  turns.value = await getTurns()
+  drivers.value = await getDrivers()
 })
 </script>

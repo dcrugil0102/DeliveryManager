@@ -40,35 +40,35 @@
 
         <tbody>
           <tr
-            v-for="pedido in pedidosFiltrados"
-            :key="pedido.id"
+            v-for="order in filteredOrders"
+            :key="order.id"
             class="border-b border-(--color-border) last:border-b-0 hover:bg-(--color-primary-soft) transition"
           >
-            <td class="py-4 font-medium text-(--color-text-primary)">#{{ pedido.id }}</td>
+            <td class="py-4 font-medium text-(--color-text-primary)">#{{ order.id }}</td>
 
             <td class="py-4 text-(--color-text-primary)">
-              {{ pedido.cliente }}
+              {{ order.cliente }}
             </td>
 
             <td class="py-4 text-(--color-text-secondary)">
-              {{ pedido.direccion }}
+              {{ order.direccion }}
             </td>
 
             <td class="py-4 text-(--color-text-primary)">
-              {{ getRepartidor(pedido.repartidorId) }}
+              {{ getDriver(order.repartidorId) }}
             </td>
 
             <td class="py-4">
               <span
                 class="px-3 py-1 rounded-full text-xs font-semibold"
-                :class="getStatusClass(pedido.estado)"
+                :class="getStatusClass(order.estado)"
               >
-                {{ pedido.estado }}
+                {{ order.estado }}
               </span>
             </td>
 
             <td class="py-4 text-(--color-text-secondary)">
-              {{ pedido.hora }}
+              {{ order.hora }}
             </td>
 
             <td class="py-4">
@@ -89,32 +89,25 @@
 </template>
 
 <script setup>
+import { getDrivers } from '@/services/driversService'
+import { getOrders } from '@/services/ordersService'
 import { computed, onMounted, ref } from 'vue'
 
-const pedidos = ref([])
-const repartidores = ref([])
+const orders = ref([])
+const deliveryDrivers = ref([])
 
-onMounted(() => {
-  fetch('http://localhost:3000/pedidos')
-    .then((res) => res.json())
-    .then((data) => {
-      pedidos.value = data
-    })
-
-  fetch('http://localhost:3000/repartidores')
-    .then((res) => res.json())
-    .then((data) => {
-      repartidores.value = data
-    })
+onMounted(async () => {
+  orders.value = await getOrders()
+  deliveryDrivers.value = await getDrivers()
 })
 const limit = ref(5)
 
-const pedidosFiltrados = computed(() => {
-  return pedidos.value.slice(-limit.value)
+const filteredOrders = computed(() => {
+  return orders.value.slice(-limit.value)
 })
 
-function getRepartidor(id) {
-  return repartidores.value.find((r) => Number(r.id) === Number(id))?.nombre || 'Sin asignar'
+function getDriver(id) {
+  return deliveryDrivers.value.find((r) => Number(r.id) === Number(id))?.nombre || 'Sin asignar'
 }
 
 const getStatusClass = (estado) => {

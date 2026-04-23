@@ -1,7 +1,7 @@
 {
   "pedidos": [
     {
-      "id": 3,
+      "id": "3",
       "cliente": "Carlos Ruiz",
       "direccion": "Calle Granada 8",
       "telefono": "622333111",
@@ -11,7 +11,7 @@
       "hora": "12:50"
     },
     {
-      "id": 8,
+      "id": "8",
       "cliente": "Elena Ruiz",
       "direccion": "Calle Jaén 18",
       "telefono": "677111222",
@@ -21,17 +21,17 @@
       "hora": "13:00"
     },
     {
-      "id": 2,
+      "id": "2",
       "cliente": "María López",
       "direccion": "Avenida Andalucía 45",
       "telefono": "611987654",
       "estado": "en reparto",
       "repartidorId": 1,
-      "precio": 12.0,
+      "precio": 12,
       "hora": "13:10"
     },
     {
-      "id": 9,
+      "id": "9",
       "cliente": "Sergio Díaz",
       "direccion": "Calle Ronda 2",
       "telefono": "600111222",
@@ -41,27 +41,27 @@
       "hora": "13:15"
     },
     {
-      "id": 10,
+      "id": "10",
       "cliente": "Laura Martín",
       "direccion": "Calle Sol 9",
       "telefono": "611222333",
       "estado": "en reparto",
       "repartidorId": 1,
-      "precio": 21.0,
+      "precio": 21,
       "hora": "13:20"
     },
     {
-      "id": 11,
+      "id": "11",
       "cliente": "Miguel Ángel",
       "direccion": "Calle Luna 4",
       "telefono": "622444555",
       "estado": "pendiente",
       "repartidorId": null,
-      "precio": 10.0,
+      "precio": 10,
       "hora": "13:25"
     },
     {
-      "id": 1,
+      "id": "1",
       "cliente": "Juan Pérez",
       "direccion": "Calle Real 12",
       "telefono": "600123456",
@@ -71,7 +71,7 @@
       "hora": "13:30"
     },
     {
-      "id": 12,
+      "id": "12",
       "cliente": "Raúl Gómez",
       "direccion": "Calle Norte 7",
       "telefono": "633555777",
@@ -81,17 +81,17 @@
       "hora": "13:35"
     },
     {
-      "id": 6,
+      "id": "6",
       "cliente": "Ana Torres",
       "direccion": "Avenida Madrid 10",
       "telefono": "655777888",
       "estado": "en reparto",
       "repartidorId": 1,
-      "precio": 27.0,
+      "precio": 27,
       "hora": "13:40"
     },
     {
-      "id": 13,
+      "id": "13",
       "cliente": "Pablo Ruiz",
       "direccion": "Calle Sur 11",
       "telefono": "644888999",
@@ -101,7 +101,7 @@
       "hora": "13:45"
     },
     {
-      "id": 14,
+      "id": "14",
       "cliente": "Lucía Pérez",
       "direccion": "Calle Este 5",
       "telefono": "655999000",
@@ -111,7 +111,7 @@
       "hora": "13:50"
     },
     {
-      "id": 15,
+      "id": "15",
       "cliente": "David Sánchez",
       "direccion": "Calle Oeste 3",
       "telefono": "666111333",
@@ -121,17 +121,17 @@
       "hora": "13:55"
     },
     {
-      "id": 4,
+      "id": "4",
       "cliente": "Lucía Fernández",
       "direccion": "Calle Málaga 21",
       "telefono": "633222444",
       "estado": "pendiente",
       "repartidorId": null,
-      "precio": 15.0,
+      "precio": 15,
       "hora": "14:00"
     },
     {
-      "id": 16,
+      "id": "16",
       "cliente": "Alberto Castro",
       "direccion": "Calle Nueva 14",
       "telefono": "677222444",
@@ -141,7 +141,7 @@
       "hora": "14:02"
     },
     {
-      "id": 5,
+      "id": "5",
       "cliente": "Pedro Sánchez",
       "direccion": "Calle Sevilla 5",
       "telefono": "644555666",
@@ -151,7 +151,7 @@
       "hora": "14:05"
     },
     {
-      "id": 17,
+      "id": "17",
       "cliente": "Cristina López",
       "direccion": "Calle Alta 6",
       "telefono": "688333555",
@@ -161,7 +161,7 @@
       "hora": "14:06"
     },
     {
-      "id": 18,
+      "id": "18",
       "cliente": "Fernando Ruiz",
       "direccion": "Calle Baja 2",
       "telefono": "699444666",
@@ -171,7 +171,7 @@
       "hora": "14:07"
     },
     {
-      "id": 19,
+      "id": "19",
       "cliente": "Beatriz Mora",
       "direccion": "Calle Central 8",
       "telefono": "600555777",
@@ -181,7 +181,7 @@
       "hora": "14:08"
     },
     {
-      "id": 7,
+      "id": "7",
       "cliente": "Javier Moreno",
       "direccion": "Calle Córdoba 3",
       "telefono": "666999000",
@@ -191,27 +191,27 @@
       "hora": "14:10"
     },
     {
-      "id": 20,
+      "id": "20",
       "cliente": "Irene Gil",
       "direccion": "Calle Verde 1",
       "telefono": "611666888",
       "estado": "pendiente",
       "repartidorId": null,
-      "precio": 14.0,
+      "precio": 14,
       "hora": "14:12"
     },
     {
-      "id": 21,
+      "id": "21",
       "cliente": "Oscar Vega",
       "direccion": "Calle Azul 4",
       "telefono": "622777999",
       "estado": "en reparto",
       "repartidorId": 1,
-      "precio": 25.0,
+      "precio": 25,
       "hora": "14:15"
     },
     {
-      "id": 22,
+      "id": "22",
       "cliente": "Noelia Ramos",
       "direccion": "Calle Blanca 7",
       "telefono": "633888000",
@@ -221,17 +221,17 @@
       "hora": "14:18"
     },
     {
-      "id": 23,
+      "id": "23",
       "cliente": "Rubén Ortiz",
       "direccion": "Calle Negra 9",
       "telefono": "644999111",
       "estado": "entregado",
       "repartidorId": 2,
-      "precio": 19.0,
+      "precio": 19,
       "hora": "14:20"
     },
     {
-      "id": 24,
+      "id": "24",
       "cliente": "Marta León",
       "direccion": "Calle Rosa 12",
       "telefono": "655000222",
@@ -241,46 +241,373 @@
       "hora": "14:22"
     },
     {
-      "id": 25,
+      "id": "25",
       "cliente": "Diego Herrera",
       "direccion": "Calle Oro 15",
       "telefono": "666111444",
-      "estado": "en reparto",
+      "estado": "entregado",
       "repartidorId": 1,
       "precio": 28.3,
       "hora": "14:25"
     }
   ],
-
   "repartidores": [
     {
-      "id": 1,
+      "id": "1",
       "nombre": "Damian",
       "estado": "ocupado",
       "telefono": "600000001"
     },
     {
-      "id": 2,
+      "id": "2",
       "nombre": "David",
       "estado": "disponible",
       "telefono": "600000002"
-    }
-  ],
-
-  "turnos": [
-    {
-      "id": 1,
-      "repartidorId": 1,
-      "dia": "lunes",
-      "horaInicio": "19:00",
-      "horaFin": "23:00"
     },
     {
-      "id": 2,
-      "repartidorId": 2,
-      "dia": "lunes",
-      "horaInicio": "20:00",
-      "horaFin": "00:00"
+      "id": "3",
+      "nombre": "Carlos",
+      "estado": "ocupado",
+      "telefono": "600000003"
+    },
+    {
+      "id": "4",
+      "nombre": "Luis",
+      "estado": "disponible",
+      "telefono": "600000004"
+    },
+    {
+      "id": "5",
+      "nombre": "María",
+      "estado": "ocupado",
+      "telefono": "600000005"
+    },
+    {
+      "id": "6",
+      "nombre": "Ana",
+      "estado": "disponible",
+      "telefono": "600000006"
+    },
+    {
+      "nombre": "Elias",
+      "telefono": "666666666",
+      "estado": "disponible",
+      "foto": "",
+      "id": "83jP-l5f9gU"
+    },
+    {
+      "nombre": "Jose",
+      "telefono": "777777777",
+      "estado": "ocupado",
+      "foto": "",
+      "id": "Gmufy9KoZUI"
     }
-  ]
+  ],
+  "turnos": [
+    {
+      "id": "1",
+      "repartidorId": 1,
+      "fecha": "2026-04-21",
+      "horaInicio": "19:00",
+      "horaFin": "23:00",
+      "estado": "finalizado"
+    },
+    {
+      "id": "2",
+      "repartidorId": 2,
+      "fecha": "2026-04-21",
+      "horaInicio": "20:00",
+      "horaFin": "00:00",
+      "estado": "finalizado"
+    },
+    {
+      "id": "3",
+      "repartidorId": 3,
+      "fecha": "2026-04-21",
+      "horaInicio": "18:00",
+      "horaFin": "22:00",
+      "estado": "finalizado"
+    },
+    {
+      "id": "4",
+      "repartidorId": 4,
+      "fecha": "2026-04-21",
+      "horaInicio": "17:00",
+      "horaFin": "21:00",
+      "estado": "finalizado"
+    },
+    {
+      "id": "5",
+      "repartidorId": 6,
+      "fecha": "2026-04-21",
+      "horaInicio": "19:00",
+      "horaFin": "23:00",
+      "estado": "finalizado"
+    },
+    {
+      "id": "6",
+      "repartidorId": 1,
+      "fecha": "2026-04-22",
+      "horaInicio": "19:00",
+      "horaFin": "23:00",
+      "estado": "finalizado"
+    },
+    {
+      "id": "7",
+      "repartidorId": 4,
+      "fecha": "2026-04-22",
+      "horaInicio": "17:00",
+      "horaFin": "21:00",
+      "estado": "finalizado"
+    },
+    {
+      "id": "8",
+      "repartidorId": 5,
+      "fecha": "2026-04-22",
+      "horaInicio": "20:00",
+      "horaFin": "00:00",
+      "estado": "finalizado"
+    },
+    {
+      "id": "9",
+      "repartidorId": 2,
+      "fecha": "2026-04-22",
+      "horaInicio": "18:00",
+      "horaFin": "22:00",
+      "estado": "finalizado"
+    },
+    {
+      "id": "10",
+      "repartidorId": 6,
+      "fecha": "2026-04-22",
+      "horaInicio": "21:00",
+      "horaFin": "01:00",
+      "estado": "finalizado"
+    },
+    {
+      "id": "11",
+      "repartidorId": 2,
+      "fecha": "2026-04-23",
+      "horaInicio": "19:00",
+      "horaFin": "23:00",
+      "estado": "en curso"
+    },
+    {
+      "id": "12",
+      "repartidorId": 3,
+      "fecha": "2026-04-23",
+      "horaInicio": "18:00",
+      "horaFin": "22:00",
+      "estado": "en curso"
+    },
+    {
+      "id": "13",
+      "repartidorId": 6,
+      "fecha": "2026-04-23",
+      "horaInicio": "21:00",
+      "horaFin": "01:00",
+      "estado": "programado"
+    },
+    {
+      "id": "14",
+      "repartidorId": 1,
+      "fecha": "2026-04-23",
+      "horaInicio": "20:00",
+      "horaFin": "00:00",
+      "estado": "en curso"
+    },
+    {
+      "id": "15",
+      "repartidorId": 4,
+      "fecha": "2026-04-23",
+      "horaInicio": "16:00",
+      "horaFin": "20:00",
+      "estado": "finalizado"
+    },
+    {
+      "id": "16",
+      "repartidorId": 5,
+      "fecha": "2026-04-23",
+      "horaInicio": "19:00",
+      "horaFin": "23:00",
+      "estado": "en curso"
+    },
+    {
+      "id": "17",
+      "repartidorId": 1,
+      "fecha": "2026-04-24",
+      "horaInicio": "20:00",
+      "horaFin": "00:00",
+      "estado": "programado"
+    },
+    {
+      "id": "18",
+      "repartidorId": 5,
+      "fecha": "2026-04-24",
+      "horaInicio": "19:00",
+      "horaFin": "23:00",
+      "estado": "programado"
+    },
+    {
+      "id": "19",
+      "repartidorId": 2,
+      "fecha": "2026-04-24",
+      "horaInicio": "18:00",
+      "horaFin": "22:00",
+      "estado": "programado"
+    },
+    {
+      "id": "20",
+      "repartidorId": 3,
+      "fecha": "2026-04-24",
+      "horaInicio": "17:00",
+      "horaFin": "21:00",
+      "estado": "programado"
+    },
+    {
+      "id": "21",
+      "repartidorId": 4,
+      "fecha": "2026-04-24",
+      "horaInicio": "20:00",
+      "horaFin": "00:00",
+      "estado": "programado"
+    },
+    {
+      "id": "22",
+      "repartidorId": 2,
+      "fecha": "2026-04-25",
+      "horaInicio": "18:00",
+      "horaFin": "22:00",
+      "estado": "programado"
+    },
+    {
+      "id": "23",
+      "repartidorId": 4,
+      "fecha": "2026-04-25",
+      "horaInicio": "20:00",
+      "horaFin": "00:00",
+      "estado": "programado"
+    },
+    {
+      "id": "24",
+      "repartidorId": 6,
+      "fecha": "2026-04-25",
+      "horaInicio": "19:00",
+      "horaFin": "23:00",
+      "estado": "programado"
+    },
+    {
+      "id": "25",
+      "repartidorId": 1,
+      "fecha": "2026-04-25",
+      "horaInicio": "17:00",
+      "horaFin": "21:00",
+      "estado": "programado"
+    },
+    {
+      "id": "26",
+      "repartidorId": 5,
+      "fecha": "2026-04-25",
+      "horaInicio": "19:00",
+      "horaFin": "23:00",
+      "estado": "programado"
+    },
+    {
+      "id": "27",
+      "repartidorId": 3,
+      "fecha": "2026-04-26",
+      "horaInicio": null,
+      "horaFin": null,
+      "estado": "descanso"
+    },
+    {
+      "id": "28",
+      "repartidorId": 5,
+      "fecha": "2026-04-26",
+      "horaInicio": "19:00",
+      "horaFin": "23:00",
+      "estado": "programado"
+    },
+    {
+      "id": "29",
+      "repartidorId": 1,
+      "fecha": "2026-04-26",
+      "horaInicio": "18:00",
+      "horaFin": "22:00",
+      "estado": "programado"
+    },
+    {
+      "id": "30",
+      "repartidorId": 2,
+      "fecha": "2026-04-26",
+      "horaInicio": null,
+      "horaFin": null,
+      "estado": "descanso"
+    },
+    {
+      "id": "31",
+      "repartidorId": 4,
+      "fecha": "2026-04-26",
+      "horaInicio": "16:00",
+      "horaFin": "20:00",
+      "estado": "programado"
+    },
+    {
+      "id": "32",
+      "repartidorId": 6,
+      "fecha": "2026-04-26",
+      "horaInicio": "20:00",
+      "horaFin": "00:00",
+      "estado": "programado"
+    },
+    {
+      "id": "33",
+      "repartidorId": 1,
+      "fecha": "2026-04-27",
+      "horaInicio": "18:00",
+      "horaFin": "22:00",
+      "estado": "programado"
+    },
+    {
+      "id": "34",
+      "repartidorId": 2,
+      "fecha": "2026-04-27",
+      "horaInicio": "20:00",
+      "horaFin": "00:00",
+      "estado": "programado"
+    },
+    {
+      "id": "35",
+      "repartidorId": 6,
+      "fecha": "2026-04-27",
+      "horaInicio": null,
+      "horaFin": null,
+      "estado": "descanso"
+    },
+    {
+      "id": "36",
+      "repartidorId": 3,
+      "fecha": "2026-04-27",
+      "horaInicio": "19:00",
+      "horaFin": "23:00",
+      "estado": "programado"
+    },
+    {
+      "id": "37",
+      "repartidorId": 4,
+      "fecha": "2026-04-27",
+      "horaInicio": "17:00",
+      "horaFin": "21:00",
+      "estado": "programado"
+    },
+    {
+      "id": "38",
+      "repartidorId": 5,
+      "fecha": "2026-04-27",
+      "horaInicio": "19:00",
+      "horaFin": "23:00",
+      "estado": "programado"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
