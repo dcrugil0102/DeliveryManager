@@ -25,3 +25,29 @@ export async function createDriver(driver) {
 
   return response.json()
 }
+
+export async function deleteDriver(id) {
+  const res = await fetch(`${BASE_URL}/${id}`, {
+    method: 'DELETE',
+  })
+
+  if (!res.ok) {
+    throw new Error('Error al eliminar repartidor')
+  }
+}
+
+export async function updateDriver(id, driver) {
+  const res = await fetch(`${BASE_URL}/${id}`, {
+    method: 'PATCH',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(driver),
+  })
+
+  if (!res.ok) {
+    throw new Error('Error al actualizar repartidor')
+  }
+
+  return res.json()
+}

@@ -64,6 +64,24 @@
           <i class="fa-solid fa-pen-to-square"></i>
           Editar
         </button>
+
+        <button
+          v-if="order.estado === 'pendiente'"
+          @click="emit('assign', order)"
+          class="w-full text-left px-4 py-2 hover:bg-slate-100 flex items-center gap-2 cursor-pointer"
+        >
+          <i class="fa-solid fa-user-plus"></i>
+          Asignar
+        </button>
+
+        <button
+          v-if="order.estado === 'en reparto'"
+          @click="emit('delivered', order)"
+          class="w-full text-left px-4 py-2 hover:bg-slate-100 flex items-center gap-2 cursor-pointer"
+        >
+          <i class="fa-solid fa-check"></i>
+          Entregado
+        </button>
       </div>
     </td>
   </tr>
@@ -76,7 +94,7 @@ const { order, deliveryDrivers } = defineProps({
   open: Number,
 })
 
-const emit = defineEmits(['toggle-menu'])
+const emit = defineEmits(['toggle-menu', 'assign'])
 
 const getDriverName = (id) => {
   const driver = deliveryDrivers.find((d) => Number(d.id) === Number(id))

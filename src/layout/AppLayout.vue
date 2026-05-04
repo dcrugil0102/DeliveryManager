@@ -19,4 +19,11 @@
 <script setup>
 import AppSidebar from './AppSidebar.vue'
 import AppTopbar from './AppTopbar.vue'
+
+import { onMounted } from 'vue'
+import { syncTurnsStatus } from '@/services/turnsService'
+
+onMounted(async () => {
+  await syncTurnsStatus()
+})
 </script>

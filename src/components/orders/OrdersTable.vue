@@ -24,6 +24,8 @@
             :delivery-drivers="deliveryDrivers"
             :open="open"
             @toggle-menu="toggleMenu"
+            @assign="emit('assign', $event)"
+            @delivered="emit('delivered', $event)"
           />
         </tbody>
       </table>
@@ -39,6 +41,8 @@ defineProps({
   orders: Array,
   deliveryDrivers: Array,
 })
+
+const emit = defineEmits(['assign', 'delivered'])
 
 const open = ref(null)
 

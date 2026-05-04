@@ -1,7 +1,8 @@
 <template>
   <div
     v-if="turn"
-    class="rounded-xl border border-slate-200 bg-slate-50 px-3 py-3 text-sm flex flex-col items-center justify-center"
+    @click="openModal"
+    class="rounded-xl border border-slate-200 bg-slate-50 px-3 py-3 text-sm flex flex-col items-center justify-center cursor-pointer hover:bg-slate-100 transition"
   >
     <p class="font-medium text-slate-700">{{ turn.horaInicio }} - {{ turn.horaFin }}</p>
 
@@ -24,16 +25,29 @@
 
   <div
     v-else
-    class="flex min-h-19.5 items-center justify-center rounded-xl border border-dashed border-slate-200 text-sm text-slate-300"
+    @click="openModal"
+    class="flex min-h-19.5 items-center justify-center rounded-xl border border-dashed border-slate-200 text-sm text-slate-300 cursor-pointer hover:bg-slate-100 transition"
   >
     —
   </div>
 </template>
 
 <script setup>
-const { turn } = defineProps({
+const { turn, driver, date } = defineProps({
   turn: Object,
+  driver: Object,
+  date: String,
 })
+
+const emit = defineEmits(['create-turn'])
+
+const openModal = () => {
+  emit('create-turn', {
+    driver,
+    date,
+    turn,
+  })
+}
 
 const getStatusClasses = (status) => {
   if (status === 'programado') {

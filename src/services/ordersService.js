@@ -25,3 +25,19 @@ export async function createOrder(order) {
 
   return response.json()
 }
+
+export async function updateOrder(id, order) {
+  const res = await fetch(`http://localhost:3000/pedidos/${id}`, {
+    method: 'PATCH',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(order),
+  })
+
+  if (!res.ok) {
+    throw new Error('Error al actualizar el pedido')
+  }
+
+  return res.json()
+}

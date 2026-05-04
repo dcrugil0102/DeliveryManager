@@ -4,10 +4,12 @@
   >
     <div class="mb-4 flex items-start justify-between">
       <span
-        class="inline-flex items-center gap-2 rounded-full bg-green-50 px-3 py-1 text-xs font-medium text-green-700"
+        class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-medium"
+        :class="getStatusClasses()"
       >
-        <span class="h-2 w-2 rounded-full bg-green-500"></span>
-        En servicio
+        <span class="h-2 w-2 rounded-full" :class="getDotClasses()"></span>
+
+        {{ getDriverStatus() }}
       </span>
 
       <div class="relative">
@@ -35,6 +37,14 @@
             <i class="fa-solid fa-pen-to-square"></i>
             Editar
           </button>
+
+          <button
+            @click="emit('request-delete', driver)"
+            class="flex w-full items-center gap-2 px-4 py-2 text-left text-red-600 hover:bg-red-50 cursor-pointer"
+          >
+            <i class="fa-solid fa-trash"></i>
+            Eliminar
+          </button>
         </div>
       </div>
     </div>
@@ -61,7 +71,7 @@
       class="mt-5 flex items-center justify-center gap-2 rounded-xl bg-green-50 px-4 py-3 text-sm font-medium text-green-700"
     >
       <i class="fa-solid fa-box text-green-600"></i>
-      {{ activeOrders }} pedidos activos
+      {{ activeOrders }} pedidos hoy
     </div>
   </div>
 </template>
@@ -76,7 +86,31 @@ const { driver, orders, openMenuId } = defineProps({
   openMenuId: Number,
 })
 
-const emit = defineEmits(['toggle-menu'])
+const emit = defineEmits(['deleted'])
+
+const getDriverStatus = () => {
+  if (driver.estado === 'disponible') return 'Disponible'
+  if (driver.estado === 'ocupado') return 'En reparto'
+  if (driver.estado === 'descanso') return 'Descanso'
+
+  return 'Sin estado'
+}
+
+const getStatusClasses = () => {
+  if (driver.estado === 'disponible') return 'bg-green-50 text-green-700'
+  if (driver.estado === 'ocupado') return 'bg-blue-50 text-blue-700'
+  if (driver.estado === 'descanso') return 'bg-purple-50 text-purple-700'
+
+  return 'bg-slate-50 text-slate-500'
+}
+
+const getDotClasses = () => {
+  if (driver.estado === 'disponible') return 'bg-green-500'
+  if (driver.estado === 'ocupado') return 'bg-blue-500'
+  if (driver.estado === 'descanso') return 'bg-purple-500'
+
+  return 'bg-slate-400'
+}
 
 const activeOrders = computed(() => {
   return orders.filter(

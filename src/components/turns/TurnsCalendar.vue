@@ -43,24 +43,42 @@
             </td>
 
             <td v-for="day in weekDays" :key="`${driver.id}-${day.date}`" class="px-3 py-3">
-              <TurnCell :turn="getTurnForCell(driver.id, day.date)" />
+              <TurnCell
+                :turn="getTurnForCell(driver.id, day.date)"
+                :driver="driver"
+                :date="day.date"
+                @create-turn="handleCreateTurn"
+              />
             </td>
           </tr>
         </tbody>
       </table>
     </div>
   </div>
+
+  <NewTurnModal
+    v-if="selected"
+    :driver="selected.driver"
+    :date="selected.date"
+    :turn="selected.turn"
+    @close="selected = null"
+    @created="emit('created')"
+  />
 </template>
 
 <script setup>
 import { computed } from 'vue'
 import TurnCell from './TurnCell.vue'
 import defaultAvatar from '@/assets/no-user-image.png'
+import { ref } from 'vue'
+import NewTurnModal from './NewTurnModal.vue'
 
 const { drivers, turns } = defineProps({
   drivers: Array,
   turns: Array,
 })
+
+const emit = defineEmits(['created'])
 
 const weekDays = computed(() => {
   return [
@@ -76,5 +94,11 @@ const weekDays = computed(() => {
 
 const getTurnForCell = (driverId, date) => {
   return turns.find((turn) => Number(turn.repartidorId) === Number(driverId) && turn.fecha === date)
+}
+
+const selected = ref(null)
+
+const handleCreateTurn = (data) => {
+  selected.value = data
 }
 </script>

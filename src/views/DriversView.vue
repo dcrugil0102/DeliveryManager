@@ -26,12 +26,14 @@ import DriversGrid from '@/components/drivers/DriversGrid.vue'
 import { getDrivers } from '@/services/driversService'
 import { getOrders } from '@/services/ordersService'
 import NewDriverModal from '@/components/drivers/NewDriverModal.vue'
+import { syncTurnsStatus } from '@/services/turnsService'
 
 const drivers = ref([])
 const orders = ref([])
 const isModalOpen = ref(false)
 
 onMounted(async () => {
+  await syncTurnsStatus()
   drivers.value = await getDrivers()
   orders.value = await getOrders()
 })
