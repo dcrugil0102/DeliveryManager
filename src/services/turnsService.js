@@ -1,5 +1,3 @@
-import { updateDriver, getDrivers } from './driversService'
-
 const BASE_URL = 'http://localhost:3000/turnos'
 
 export async function getTurns() {
@@ -46,13 +44,13 @@ export async function updateTurn(id, turn) {
 
 export async function syncTurnsStatus() {
   const turns = await getTurns()
-  const drivers = await getDrivers()
 
   const now = new Date()
   const currentHour = now.toTimeString().slice(0, 5)
-  const currentDate = now.toLocaleDateString('en-CA') // YYYY-MM-DD
+  const currentDate = now.toLocaleDateString('en-CA')
 
   for (const turn of turns) {
+    if (turn.estado === 'descanso') continue
     let newStatus
 
     if (turn.fecha === currentDate) {
@@ -73,28 +71,6 @@ export async function syncTurnsStatus() {
       await updateTurn(turn.id, {
         estado: newStatus,
       })
-    }
-
-    const driver = drivers.find((driver) => Number(driver.id) === Number(turn.repartidorId))
-
-    if (!driver) continue
-
-    let newDriverStatus = driver.estado
-
-    if (newStatus === 'en curso') {
-      newDriverStatus = 'disponible'
-    }
-
-    if (newStatus === 'finalizado') {
-      newDriverStatus = 'fuera de servicio'
-    }
-
-    if (newDriverStatus !== driver.estado) {
-      await updateDriver(driver.id, {
-        estado: newDriverStatus,
-      })
-
-      driver.estado = newDriverStatus
     }
   }
 }

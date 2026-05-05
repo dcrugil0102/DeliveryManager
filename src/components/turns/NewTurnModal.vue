@@ -116,7 +116,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import { createTurn, updateTurn } from '@/services/turnsService'
+import { createTurn, updateTurn, syncTurnsStatus } from '@/services/turnsService'
 import defaultAvatar from '@/assets/no-user-image.png'
 import { watch } from 'vue'
 
@@ -133,6 +133,13 @@ const horaFin = ref(props.turn?.horaFin || '')
 
 const esDescanso = ref(props.turn?.estado === 'descanso')
 
+watch(esDescanso, (val) => {
+  if (val) {
+    horaInicio.value = ''
+    horaFin.value = ''
+  }
+})
+
 const handleSubmit = async () => {
   const turnData = {
     repartidorId: props.driver.id,
@@ -142,18 +149,13 @@ const handleSubmit = async () => {
     estado: esDescanso.value ? 'descanso' : 'programado',
   }
 
-  watch(esDescanso, (val) => {
-    if (val) {
-      horaInicio.value = ''
-      horaFin.value = ''
-    }
-  })
-
   if (props.turn) {
     await updateTurn(props.turn.id, turnData)
   } else {
     await createTurn(turnData)
   }
+
+  await syncTurnsStatus()
 
   emit('created')
   emit('close')

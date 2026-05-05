@@ -17,7 +17,7 @@
             >
               <div>{{ day.label }}</div>
               <div class="text-xs font-normal text-slate-400">
-                {{ day.date }}
+                {{ formatShortDate(day.date) }}
               </div>
             </th>
           </tr>
@@ -53,6 +53,34 @@
           </tr>
         </tbody>
       </table>
+      <div
+        class="flex flex-wrap items-center gap-6 border border-gray-100 bg-white px-4 py-5 text-sm shadow-sm"
+      >
+        <div class="flex items-center gap-2">
+          <span class="h-2 w-2 rounded-full bg-green-500"></span>
+          Programado
+        </div>
+
+        <div class="flex items-center gap-2">
+          <span class="h-2 w-2 rounded-full bg-blue-500"></span>
+          En curso
+        </div>
+
+        <div class="flex items-center gap-2">
+          <span class="h-2 w-2 rounded-full bg-purple-500"></span>
+          Descanso
+        </div>
+
+        <div class="flex items-center gap-2">
+          <span class="h-2 w-2 rounded-full bg-slate-400"></span>
+          Finalizado
+        </div>
+
+        <div class="flex items-center gap-2">
+          <span class="h-3 w-3 rounded border border-slate-300"></span>
+          Sin turno
+        </div>
+      </div>
     </div>
   </div>
 
@@ -67,30 +95,27 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { ref } from 'vue'
 import TurnCell from './TurnCell.vue'
 import defaultAvatar from '@/assets/no-user-image.png'
-import { ref } from 'vue'
 import NewTurnModal from './NewTurnModal.vue'
 
-const { drivers, turns } = defineProps({
+const { drivers, turns, weekDays } = defineProps({
   drivers: Array,
   turns: Array,
+  weekDays: Array,
 })
 
 const emit = defineEmits(['created'])
 
-const weekDays = computed(() => {
-  return [
-    { label: 'Lun', date: '2026-04-21' },
-    { label: 'Mar', date: '2026-04-22' },
-    { label: 'Mié', date: '2026-04-23' },
-    { label: 'Jue', date: '2026-04-24' },
-    { label: 'Vie', date: '2026-04-25' },
-    { label: 'Sáb', date: '2026-04-26' },
-    { label: 'Dom', date: '2026-04-27' },
-  ]
-})
+const formatShortDate = (date) => {
+  return new Date(date)
+    .toLocaleDateString('es-ES', {
+      day: 'numeric',
+      month: 'short',
+    })
+    .replace('.', '')
+}
 
 const getTurnForCell = (driverId, date) => {
   return turns.find((turn) => Number(turn.repartidorId) === Number(driverId) && turn.fecha === date)

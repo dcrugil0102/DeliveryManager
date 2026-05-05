@@ -19,11 +19,20 @@
 <script setup>
 import AppSidebar from './AppSidebar.vue'
 import AppTopbar from './AppTopbar.vue'
-
-import { onMounted } from 'vue'
+import { onMounted, onUnmounted } from 'vue'
 import { syncTurnsStatus } from '@/services/turnsService'
+
+let intervalId = null
 
 onMounted(async () => {
   await syncTurnsStatus()
+
+  intervalId = setInterval(async () => {
+    await syncTurnsStatus()
+  }, 60000)
+})
+
+onUnmounted(() => {
+  clearInterval(intervalId)
 })
 </script>

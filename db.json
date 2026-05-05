@@ -331,7 +331,7 @@
     {
       "id": "1",
       "nombre": "Damian",
-      "estado": "fuera de servicio",
+      "estado": "disponible",
       "telefono": "600000001",
       "foto": "/uploads/damian.png"
     },
@@ -344,13 +344,13 @@
     {
       "id": "3",
       "nombre": "Carlos",
-      "estado": "fuera de servicio",
+      "estado": "disponible",
       "telefono": "600000003"
     },
     {
       "id": "4",
       "nombre": "Luis",
-      "estado": "fuera de servicio",
+      "estado": "disponible",
       "telefono": "600000004"
     },
     {
@@ -694,6 +694,334 @@
       "horaFin": "",
       "estado": "finalizado",
       "id": "HW_dkmLOfUY"
+    },
+    {
+      "repartidorId": "1",
+      "fecha": "2026-05-27",
+      "horaInicio": "20:00",
+      "horaFin": "23:00",
+      "estado": "programado",
+      "id": "fBWIwDtJlVY"
+    },
+    {
+      "repartidorId": "1",
+      "fecha": "2026-05-04",
+      "horaInicio": "19:30",
+      "horaFin": "23:00",
+      "estado": "finalizado",
+      "id": "03VntRJ2nzA"
+    },
+    {
+      "repartidorId": "2",
+      "fecha": "2026-05-04",
+      "horaInicio": "",
+      "horaFin": "",
+      "estado": "descanso",
+      "id": "VefiYULP7Sc"
+    },
+    {
+      "repartidorId": "3",
+      "fecha": "2026-05-04",
+      "horaInicio": "20:00",
+      "horaFin": "00:00",
+      "estado": "finalizado",
+      "id": "UpADR4sRObY"
+    },
+    {
+      "repartidorId": "4",
+      "fecha": "2026-05-04",
+      "horaInicio": "",
+      "horaFin": "",
+      "estado": "descanso",
+      "id": "DoiqCORwWZk"
+    },
+    {
+      "repartidorId": "5",
+      "fecha": "2026-05-04",
+      "horaInicio": "21:00",
+      "horaFin": "00:30",
+      "estado": "finalizado",
+      "id": "GWIwCsqIgUw"
+    },
+    {
+      "repartidorId": "1",
+      "fecha": "2026-05-05",
+      "horaInicio": "10:00",
+      "horaFin": "11:00",
+      "estado": "finalizado",
+      "id": "RA8HN6r77Dk"
+    },
+    {
+      "repartidorId": "2",
+      "fecha": "2026-05-05",
+      "horaInicio": "10:30",
+      "horaFin": "11:30",
+      "estado": "en curso",
+      "id": "pn9Et9f8V1Y"
+    },
+    {
+      "repartidorId": "3",
+      "fecha": "2026-05-05",
+      "horaInicio": "",
+      "horaFin": "",
+      "estado": "descanso",
+      "id": "3owWeUvh_nk"
+    },
+    {
+      "repartidorId": "4",
+      "fecha": "2026-05-05",
+      "horaInicio": "11:00",
+      "horaFin": "12:30",
+      "estado": "en curso",
+      "id": "ukxWfrcFlYk"
+    },
+    {
+      "repartidorId": "1",
+      "fecha": "2026-05-09",
+      "horaInicio": "",
+      "horaFin": "",
+      "estado": "descanso",
+      "id": "JDFWeuC2zbU"
+    },
+    {
+      "repartidorId": "1",
+      "fecha": "2026-05-06",
+      "horaInicio": "",
+      "horaFin": "",
+      "estado": "descanso",
+      "id": "yOrD5O2wSgw"
+    },
+    {
+      "repartidorId": "3",
+      "fecha": "2026-05-08",
+      "horaInicio": "",
+      "horaFin": "",
+      "estado": "descanso",
+      "id": "lY4b2g9fQr4"
+    },
+    {
+      "repartidorId": "4",
+      "fecha": "2026-05-06",
+      "horaInicio": "",
+      "horaFin": "",
+      "estado": "descanso",
+      "id": "sNVK1dzsWNA"
+    },
+    {
+      "repartidorId": "5",
+      "fecha": "2026-05-10",
+      "horaInicio": "",
+      "horaFin": "",
+      "estado": "descanso",
+      "id": "wrfXjSS0GQY"
+    },
+    {
+      "repartidorId": "5",
+      "fecha": "2026-05-07",
+      "horaInicio": "",
+      "horaFin": "",
+      "estado": "descanso",
+      "id": "51fSojiTWD0"
+    },
+    {
+      "repartidorId": "6",
+      "fecha": "2026-05-04",
+      "horaInicio": "",
+      "horaFin": "",
+      "estado": "descanso",
+      "id": "cZNXaCkYEaY"
+    },
+    {
+      "repartidorId": "6",
+      "fecha": "2026-05-05",
+      "horaInicio": "",
+      "horaFin": "",
+      "estado": "descanso",
+      "id": "GH-mwreFfLU"
+    },
+    {
+      "repartidorId": "2",
+      "fecha": "2026-05-06",
+      "horaInicio": "19:00",
+      "horaFin": "22:30",
+      "estado": "programado",
+      "id": "tigCbOeAyrE"
+    },
+    {
+      "repartidorId": "3",
+      "fecha": "2026-05-06",
+      "horaInicio": "20:00",
+      "horaFin": "23:00",
+      "estado": "programado",
+      "id": "t4YeigSToPQ"
+    },
+    {
+      "repartidorId": "5",
+      "fecha": "2026-05-06",
+      "horaInicio": "20:30",
+      "horaFin": "23:30",
+      "estado": "programado",
+      "id": "CkxC9xsZolM"
+    },
+    {
+      "repartidorId": "6",
+      "fecha": "2026-05-06",
+      "horaInicio": "21:00",
+      "horaFin": "00:00",
+      "estado": "programado",
+      "id": "_k6hcODanAI"
+    },
+    {
+      "repartidorId": "1",
+      "fecha": "2026-05-07",
+      "horaInicio": "20:00",
+      "horaFin": "23:00",
+      "estado": "programado",
+      "id": "gtUzUxCXjzc"
+    },
+    {
+      "repartidorId": "3",
+      "fecha": "2026-05-07",
+      "horaInicio": "21:00",
+      "horaFin": "00:00",
+      "estado": "programado",
+      "id": "H-DaeGyExSQ"
+    },
+    {
+      "repartidorId": "4",
+      "fecha": "2026-05-07",
+      "horaInicio": "19:30",
+      "horaFin": "23:00",
+      "estado": "programado",
+      "id": "TTEHbc-Rl94"
+    },
+    {
+      "repartidorId": "6",
+      "fecha": "2026-05-07",
+      "horaInicio": "20:00",
+      "horaFin": "23:30",
+      "estado": "programado",
+      "id": "h-FlTI9RjPk"
+    },
+    {
+      "repartidorId": "1",
+      "fecha": "2026-05-08",
+      "horaInicio": "21:00",
+      "horaFin": "00:30",
+      "estado": "programado",
+      "id": "2rf2BOaeuHU"
+    },
+    {
+      "repartidorId": "2",
+      "fecha": "2026-05-08",
+      "horaInicio": "20:30",
+      "horaFin": "00:00",
+      "estado": "programado",
+      "id": "RmVZLb3457U"
+    },
+    {
+      "repartidorId": "4",
+      "fecha": "2026-05-08",
+      "horaInicio": "19:00",
+      "horaFin": "22:30",
+      "estado": "programado",
+      "id": "TG18OxCQLTo"
+    },
+    {
+      "repartidorId": "5",
+      "fecha": "2026-05-08",
+      "horaInicio": "20:00",
+      "horaFin": "23:30",
+      "estado": "programado",
+      "id": "kaRYyWPTmPM"
+    },
+    {
+      "repartidorId": "6",
+      "fecha": "2026-05-08",
+      "horaInicio": "20:00",
+      "horaFin": "23:00",
+      "estado": "programado",
+      "id": "rZ2dALfmOEM"
+    },
+    {
+      "repartidorId": "2",
+      "fecha": "2026-05-09",
+      "horaInicio": "20:00",
+      "horaFin": "23:00",
+      "estado": "programado",
+      "id": "HWpkDXc2sm8"
+    },
+    {
+      "repartidorId": "3",
+      "fecha": "2026-05-09",
+      "horaInicio": "19:00",
+      "horaFin": "22:30",
+      "estado": "programado",
+      "id": "Eyj7Qc0di7s"
+    },
+    {
+      "repartidorId": "4",
+      "fecha": "2026-05-09",
+      "horaInicio": "21:00",
+      "horaFin": "00:30",
+      "estado": "programado",
+      "id": "4IxOEpRqKAk"
+    },
+    {
+      "repartidorId": "5",
+      "fecha": "2026-05-09",
+      "horaInicio": "20:30",
+      "horaFin": "23:30",
+      "estado": "programado",
+      "id": "tDDQw4yoxug"
+    },
+    {
+      "repartidorId": "6",
+      "fecha": "2026-05-09",
+      "horaInicio": "20:00",
+      "horaFin": "23:30",
+      "estado": "programado",
+      "id": "34KkAcWRr8c"
+    },
+    {
+      "repartidorId": "1",
+      "fecha": "2026-05-10",
+      "horaInicio": "20:00",
+      "horaFin": "23:00",
+      "estado": "programado",
+      "id": "vjwc5A6zjAk"
+    },
+    {
+      "repartidorId": "2",
+      "fecha": "2026-05-10",
+      "horaInicio": "20:30",
+      "horaFin": "23:30",
+      "estado": "programado",
+      "id": "1wXup1nCcno"
+    },
+    {
+      "repartidorId": "3",
+      "fecha": "2026-05-10",
+      "horaInicio": "19:30",
+      "horaFin": "23:00",
+      "estado": "programado",
+      "id": "_bfq8-CRSlI"
+    },
+    {
+      "repartidorId": "4",
+      "fecha": "2026-05-10",
+      "horaInicio": "19:30",
+      "horaFin": "23:00",
+      "estado": "programado",
+      "id": "cl3ZXuQbWco"
+    },
+    {
+      "repartidorId": "6",
+      "fecha": "2026-05-10",
+      "horaInicio": "21:00",
+      "horaFin": "00:00",
+      "estado": "programado",
+      "id": "PeiTWo8aLmg"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

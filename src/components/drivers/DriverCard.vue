@@ -9,7 +9,7 @@
       >
         <span class="h-2 w-2 rounded-full" :class="getDotClasses()"></span>
 
-        {{ getDriverStatus() }}
+        {{ driver.estado.charAt(0).toUpperCase() + driver.estado.slice(1) }}
       </span>
 
       <div class="relative">
@@ -87,14 +87,6 @@ const { driver, orders, openMenuId } = defineProps({
 })
 
 const emit = defineEmits(['deleted'])
-
-const getDriverStatus = () => {
-  if (driver.estado === 'disponible') return 'Disponible'
-  if (driver.estado === 'ocupado') return 'En reparto'
-  if (driver.estado === 'descanso') return 'Descanso'
-
-  return 'Sin estado'
-}
 
 const getStatusClasses = () => {
   if (driver.estado === 'disponible') return 'bg-green-50 text-green-700'
