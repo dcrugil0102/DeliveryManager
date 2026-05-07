@@ -331,20 +331,20 @@
     {
       "id": "1",
       "nombre": "Damian",
-      "estado": "disponible",
+      "estado": "fuera de servicio",
       "telefono": "600000001",
       "foto": "/uploads/damian.png"
     },
     {
       "id": "2",
       "nombre": "David",
-      "estado": "fuera de servicio",
+      "estado": "disponible",
       "telefono": "600000002"
     },
     {
       "id": "3",
       "nombre": "Carlos",
-      "estado": "disponible",
+      "estado": "fuera de servicio",
       "telefono": "600000003"
     },
     {
@@ -716,7 +716,7 @@
       "fecha": "2026-05-04",
       "horaInicio": "",
       "horaFin": "",
-      "estado": "descanso",
+      "estado": "finalizado",
       "id": "VefiYULP7Sc"
     },
     {
@@ -732,7 +732,7 @@
       "fecha": "2026-05-04",
       "horaInicio": "",
       "horaFin": "",
-      "estado": "descanso",
+      "estado": "finalizado",
       "id": "DoiqCORwWZk"
     },
     {
@@ -756,7 +756,7 @@
       "fecha": "2026-05-05",
       "horaInicio": "10:30",
       "horaFin": "11:30",
-      "estado": "en curso",
+      "estado": "finalizado",
       "id": "pn9Et9f8V1Y"
     },
     {
@@ -764,7 +764,7 @@
       "fecha": "2026-05-05",
       "horaInicio": "",
       "horaFin": "",
-      "estado": "descanso",
+      "estado": "finalizado",
       "id": "3owWeUvh_nk"
     },
     {
@@ -772,7 +772,7 @@
       "fecha": "2026-05-05",
       "horaInicio": "11:00",
       "horaFin": "12:30",
-      "estado": "en curso",
+      "estado": "finalizado",
       "id": "ukxWfrcFlYk"
     },
     {
@@ -780,7 +780,7 @@
       "fecha": "2026-05-09",
       "horaInicio": "",
       "horaFin": "",
-      "estado": "descanso",
+      "estado": "programado",
       "id": "JDFWeuC2zbU"
     },
     {
@@ -788,7 +788,7 @@
       "fecha": "2026-05-06",
       "horaInicio": "",
       "horaFin": "",
-      "estado": "descanso",
+      "estado": "programado",
       "id": "yOrD5O2wSgw"
     },
     {
@@ -796,7 +796,7 @@
       "fecha": "2026-05-08",
       "horaInicio": "",
       "horaFin": "",
-      "estado": "descanso",
+      "estado": "programado",
       "id": "lY4b2g9fQr4"
     },
     {
@@ -804,7 +804,7 @@
       "fecha": "2026-05-06",
       "horaInicio": "",
       "horaFin": "",
-      "estado": "descanso",
+      "estado": "programado",
       "id": "sNVK1dzsWNA"
     },
     {
@@ -812,7 +812,7 @@
       "fecha": "2026-05-10",
       "horaInicio": "",
       "horaFin": "",
-      "estado": "descanso",
+      "estado": "programado",
       "id": "wrfXjSS0GQY"
     },
     {
@@ -820,7 +820,7 @@
       "fecha": "2026-05-07",
       "horaInicio": "",
       "horaFin": "",
-      "estado": "descanso",
+      "estado": "programado",
       "id": "51fSojiTWD0"
     },
     {
@@ -828,7 +828,7 @@
       "fecha": "2026-05-04",
       "horaInicio": "",
       "horaFin": "",
-      "estado": "descanso",
+      "estado": "finalizado",
       "id": "cZNXaCkYEaY"
     },
     {
@@ -836,7 +836,7 @@
       "fecha": "2026-05-05",
       "horaInicio": "",
       "horaFin": "",
-      "estado": "descanso",
+      "estado": "finalizado",
       "id": "GH-mwreFfLU"
     },
     {
